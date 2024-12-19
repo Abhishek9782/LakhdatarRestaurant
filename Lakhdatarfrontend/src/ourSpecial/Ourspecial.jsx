@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
-import axios, { all } from "axios";
+import axios from "axios";
 
 export const Ourspecial = () => {
   const OurSpecialParent = styled.div`
@@ -8,6 +8,9 @@ export const Ourspecial = () => {
     color: red;
     display: flex;
     justify-content: center;
+    @media (max-width: 767px) {
+      width: 100%;
+    }
   `;
   const Container = styled.div`
     color: white;
@@ -16,6 +19,9 @@ export const Ourspecial = () => {
     width: 100%;
     max-width: 1224px;
     margin-top: 82px;
+    @media (max-width: 767px) {
+      width: 100%;
+    }
   `;
   const DishSweet = styled.div`
     display: flex;
@@ -28,13 +34,27 @@ export const Ourspecial = () => {
     margin: 2rem 0rem;
     font-family: "Kanit";
     margin-left: 2em;
+    @media (max-width: 767px) {
+      margin: 0px;
+      font-size: 20px;
+      margin-left: 10px;
+      margin-bottom: 20px;
+    }
   `;
   const OurSpecialList = styled.div`
     height: auto;
     overflow-x: hidden;
+    @media (max-width: 767px) {
+      width: 100%;
+    }
   `;
   const ListUl = styled.ul`
     display: flex;
+    @media (max-width: 767px) {
+      margin: 0px;
+      padding: 0px;
+      overflow-x: scroll;
+    }
   `;
   const Listli = styled.li`
     list-style: none;
@@ -44,6 +64,9 @@ export const Ourspecial = () => {
     justify-content: center;
     margin: 0px 20px;
     cursor: pointer;
+    @media (max-width: 767px) {
+      margin: 0px 5px;
+    }
   `;
 
   const ListImg = styled.img`
@@ -52,6 +75,10 @@ export const Ourspecial = () => {
     object-fit: cover;
     border-radius: 50%;
     object-position: center;
+    @media (max-width: 767px) {
+      width: 70px;
+      height: 70px;
+    }
   `;
 
   const Listspan = styled.span`
@@ -62,6 +89,10 @@ export const Ourspecial = () => {
     margin-top: 30px;
     font-family: sans-serif;
     color: black;
+    @media (max-width: 767px) {
+      font-size: 10px;
+      bottom: 23px;
+    }
   `;
 
   const OurSpecial = styled.div`
@@ -74,6 +105,12 @@ export const Ourspecial = () => {
     margin: 1em 0 1em 2em;
     font-size: 23px;
     font-family: "Kanit";
+    @media (max-width: 767px) {
+      margin: 0px;
+      font-size: 20px;
+      margin-left: 10px;
+      margin-bottom: 20px;
+    }
   `;
 
   const SpecialHeadList = styled.div`
@@ -82,9 +119,17 @@ export const Ourspecial = () => {
     margin-top: 2em;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
     row-gap: 30px;
     column-gap: 10px;
+    @media (max-width: 767px) {
+      width: 100%;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto;
+      column-gap: 10px;
+      row-gap: 10px;
+      padding: 10px;
+    }
   `;
 
   const SpecialItem = styled.div`
@@ -93,14 +138,20 @@ export const Ourspecial = () => {
     position: relative;
     box-shadow: 1px 1px 10px #99999961;
     cursor: pointer;
+    @media (max-width: 767px) {
+      width: 100%;
+    }
   `;
 
   const SpecialImage = styled.img`
-    width: 300px;
+    width: 100%;
     height: 232px;
     object-fit: cover;
     border-radius: 10px;
     opacity: 0.9;
+    @media (max-width: 767px) {
+      height: 150px;
+    }
   `;
 
   const Offer = styled.h3`
@@ -109,6 +160,12 @@ export const Ourspecial = () => {
     top: 12rem;
     left: 1rem;
     font-size: 24px;
+    @media (max-width: 767px) {
+      font-size: 15px;
+      top: 8rem;
+      left: 3rem;
+      color: yellow;
+    }
   `;
 
   const BottomDetails = styled.div``;
@@ -117,6 +174,9 @@ export const Ourspecial = () => {
     font-size: 18px;
     font-family: "kanit";
     margin: 10px 20px 0px 20px;
+    @media (max-width: 767px) {
+      font-size: 14px;
+    }
   `;
 
   const DishRating = styled.div`
@@ -192,7 +252,7 @@ export const Ourspecial = () => {
                     src="https://img.freepik.com/free-photo/vertical-shot-traditional-indian-paneer-butter-masala-cheese-cottage-curry-black-surface_181624-32001.jpg?ga=GA1.1.1046556778.1729127904&semt=ais_hybrid"
                     alt="img not found"
                   />
-                  <Listspan>Paneer Special</Listspan>
+                  <Listspan>Paneer</Listspan>
                 </Listli>
                 <Listli>
                   <ListImg
