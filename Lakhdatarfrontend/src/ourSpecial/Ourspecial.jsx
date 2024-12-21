@@ -161,10 +161,17 @@ export const Ourspecial = () => {
     left: 1rem;
     font-size: 24px;
     @media (max-width: 767px) {
+      width: 100%;
+      padding: 2px;
       font-size: 15px;
       top: 8rem;
-      left: 3rem;
-      color: yellow;
+      right: 0px;
+      left: 0px;
+      border-end-start-radius: 10px;
+      border-end-end-radius: 10px;
+      text-align: center;
+      color: black;
+      background: linear-gradient(to right, #02aab0, #00cdac);
     }
   `;
 
@@ -184,10 +191,16 @@ export const Ourspecial = () => {
     flex-direction: row;
     align-items: center;
     margin: 0px 20px;
+    @media (max-width: 767px) {
+      margin-top: 8px;
+    }
   `;
 
   const DishRatingImg = styled.img`
     width: 20px;
+    @media (max-width: 767px) {
+      width: 18px;
+    }
   `;
 
   const DishRatingText = styled.span`
@@ -195,6 +208,9 @@ export const Ourspecial = () => {
     font-size: 16px;
     font-family: "kanit";
     margin: 0px 10px;
+    @media (max-width: 767px) {
+      font-size: 10px;
+    }
   `;
 
   const DishRatingText2 = styled.span`
@@ -206,6 +222,10 @@ export const Ourspecial = () => {
     line-height: 12px;
     padding-right: 10px;
     margin-top: 10px;
+    @media (max-width: 767px) {
+      bottom: 50px;
+      font-size: 10px;
+    }
   `;
 
   // State

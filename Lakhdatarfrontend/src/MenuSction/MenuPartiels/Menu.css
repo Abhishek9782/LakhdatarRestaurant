@@ -270,9 +270,9 @@
   }
   .menuslider > .menubar > span {
     margin: 0px;
-    font-size: 11px;
-    padding: 0px;
-    margin: 0px 5px;
+    font-size: 15px;
+    padding: 3px;
+    margin: 0px 12px;
   }
   .menuitem {
     display: grid;

@@ -150,3 +150,45 @@
   cursor: pointer;
   color: black;
 }
+
+@media screen and (max-width: 767px) {
+  .legalhelpContainer {
+    position: relative;
+    top: 70px;
+    bottom: 40px;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .legalhelpContainer > .helpLegalheader > h3 {
+    color: black;
+    font-size: 22px;
+    font-weight: 600;
+    font-family: "kanit";
+    margin: 0;
+    padding: 0;
+  }
+  .legalhelpContainer > .helpLegalheader > span {
+    color: black;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Kanit";
+  }
+  .LegalhelpSection {
+    display: flex;
+    flex-direction: column;
+  }
+  .LegalhelpSection > .LeagalhelpHeader {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .Legalhelptype > ul > li > .text > span {
+    margin: 5px 30px;
+    color: black;
+    font-family: "Kanit";
+    font-weight: 400;
+    font-size: 17px;
+  }
+}

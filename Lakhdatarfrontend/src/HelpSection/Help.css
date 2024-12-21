@@ -141,3 +141,43 @@
   cursor: pointer;
   color: black;
 }
+
+@media screen and (max-width: 767px) {
+  .helpContainer {
+    position: relative;
+    top: 70px;
+  }
+  .helpContainer > .header > h3 {
+    font-size: 20px;
+  }
+  .helpContainer > .header > span {
+    font-size: 14px;
+  }
+  .helpSection {
+    display: flex;
+    flex-direction: column;
+  }
+  .helpSection > .helpHeader {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 5px;
+    margin: 0px;
+  }
+  .helpSection > .helpHeader > .helpsubheader {
+    width: auto;
+  }
+  .helptype > ul > li > .text > span {
+    margin: 5px 0px;
+    color: black;
+    font-family: "Kanit";
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  .helptype > ul > li > .text > .show > h3 {
+    color: black;
+    font-family: "kanit";
+    font-size: 20px;
+  }
+}

@@ -184,7 +184,9 @@ export const Menu = () => {
                         <i
                           class="fa-regular fa-heart"
                           onClick={(e) => {
-                            handleFavProduct(e, food._id);
+                            user
+                              ? handleFavProduct(e, food._id)
+                              : alert("Please Login Your Account ");
                           }}
                         ></i>
                       )}
